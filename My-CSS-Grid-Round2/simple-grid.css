@@ -1,0 +1,424 @@
+/**
+*** SIMPLE GRID
+*** (C) ZACH COLE 2016
+**/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+
+
+
+/* ROOT FONT STYLES */
+
+* {
+  font-family: monospace;
+  color:antiquewhite;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 100%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 100%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+.historicplaces ul {
+  list-style: none;
+}
+
+ul li:before {
+  padding: 1em;
+  content: "\2665";
+  color: pink;
+  font-size: 25px;
+}
+
+.places {
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.place1 {
+  flex: 1;
+  order: 1;
+  flex-wrap: wrap;
+}
+
+.egypt-top-image {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: pink;
+  border-bottom-color: pink;
+  border-left-color: pink;
+  border-right-color: pink;
+}
+
+.egypt {
+
+}
+
+.place1 img {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: pink;
+  border-bottom-color: pink;
+  border-left-color: pink;
+  border-right-color: pink;
+}
+
+.place1 ul {
+  overflow: hidden;
+}
+
+.place2 {
+  flex: 1;
+  order: 2;
+  flex-wrap: wrap;
+}
+
+.place2 img {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: pink;
+  border-bottom-color: pink;
+  border-left-color: pink;
+  border-right-color: pink;
+}
+
+.place2 ul {
+  overflow: hidden;
+}
+
+.place3 {
+  flex: 1;
+  order: 3;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.place3 img {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: pink;
+  border-bottom-color: pink;
+  border-left-color: pink;
+  border-right-color: pink;
+}
+
+.place3 ul {
+  overflow: hidden;
+}
+
+.topmiddlebottom {
+  order: 2;
+ 
+   background-image: url("./realspace.png");
+  background-size: cover;
+   background-position: center;
+ 
+   border-right-style: solid;
+   border-left-style: solid;
+   border-left-color: pink;
+   border-right-color: pink;
+   background-color: pink;
+   color: antiquewhite;
+ 
+    font-size: 20px;
+ 
+ }
+ 
+ .topmiddlebottom h2 {
+   text-decoration: underline overline;
+ }
+ 
+ .topmiddlebottom h3 {
+   font-size: 20px;
+ }
+ 
+ 
+ table,
+ th,
+ td {
+   border: 1px solid pink;
+   border-width: 3px;
+   border-collapse: collapse;
+   background-color: #926239;
+   padding: 1em;
+ }
+ 
+ 
+ .footer {
+   order: 3;
+   border-top-style: solid;
+   border-bottom-style: solid;
+   border-right-style: solid;
+   border-left-style: solid;
+   border-top-color: pink;
+   border-bottom-color: pink;
+   border-left-color: pink;
+   border-right-color: pink;
+   /*border-width: 2px;*/
+   font-variant: small-caps;
+   background-color: #926239;
+   /*padding: 1em;*/
+   border-width: 2px;
+   font-size: 18px;
+   padding: 1em;
+   /*color: antiquewhite;*/
+   color: antiquewhite;
+ 
+ }
+ 
+ .arr {
+   float: left;
+ }
+ 
+ .projectcodex {
+   float: right;
+ }
+ 
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ 
+ .clearfix {
+   overflow: auto;
+   zoom: 1;
+ }
+ 
+ .content {
+   padding: 0em;
+ }

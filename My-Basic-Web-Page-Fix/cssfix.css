@@ -1,0 +1,280 @@
+
+.body {
+    /* you can use a more complete font-family from VSCode as well */
+    font-family: monospace;
+}
+
+.container {
+    font-family: monospace;
+}
+
+.introdiv {
+    padding: 1em;
+    background-image: url("./space.gif");
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: pink;
+    border-bottom-color: pink;
+    border-left-color: pink;
+    border-right-color: pink;
+    border-width: 2px;
+    text-align: center;
+    color: AntiqueWhite;
+    height: 17vh;
+}
+
+.introdiv h1 {
+    position: relative;
+    top: 35px;
+    font-weight: bold;
+}
+
+.header {
+    order: 1; 
+    background-color: #926239;
+    padding: 1em;
+    color: AntiqueWhite;
+    border-bottom-style: solid;
+    border-bottom-color: pink;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-left-color: pink;
+    border-right-color: pink;
+    font-size:15px;
+    /*border-width: 2px;*/
+}
+
+.header img {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: pink;
+    border-bottom-color: pink;
+    border-left-color: pink;
+    border-right-color: pink;
+}
+
+.header ul {
+    font-size: 20px;
+}
+
+
+
+.menu li {
+    display: flex; 
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+    font-size: 15px;
+}
+
+.menu a {
+    /* Ensure one can click anyware in the li for the link */
+    padding: 1em;
+    display: block;
+    width: 6em;
+}
+
+.menu a:hover {
+    /* Change the menu color to darker green when hovering over a link*/
+    background: grey;
+    color: AntiqueWhite;
+    padding: 1em;
+    width: 6em;
+}
+
+.menuone {
+    font-size: 20px;
+    text-decoration: none;
+    color: #F0FFFF;
+    border: pink 3px solid;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+    .menutwo {
+        font-size: 20px;
+        text-decoration: none;
+        color: AntiqueWhite;
+        border: pink 3px solid;
+        padding: 20px 30px;
+        border-radius: 10px;
+        margin: 1em;
+    }
+
+    .menuthree {
+        font-size: 20px;
+        text-decoration: none;
+        color: AntiqueWhite;
+        border: pink 3px solid;
+        padding: 20px 30px;
+        border-radius: 10px;
+        margin: 1em;
+    }
+
+    .left {
+        float: left;
+        flex-wrap: wrap;
+    }
+    
+    .right {
+        float: right; 
+        flex-wrap: wrap;
+    }    
+    
+    .historicplaces li {
+        list-style-type: circle;
+    }
+
+.places {
+    max-width: 100%;
+    flex-wrap: wrap; 
+}
+
+.place1 {
+    flex: 1;
+    order: 1;
+    flex-wrap: wrap;
+    
+}
+
+.place1 ul {
+    overflow: hidden;
+}
+
+.place2 {
+    flex: 1;
+    order: 2; 
+    flex-wrap: wrap;
+}
+
+.place2 ul {
+    overflow: hidden;
+}
+
+.place3 {
+    flex: 1; 
+    order: 3;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.place3 ul {
+    overflow: hidden;
+}
+    
+.topmiddlebottom {
+    order: 2;
+
+    background-image: url("./realspace.png");
+    /*background-size: cover;*/
+    background-position: center;
+    
+    border-right-style: solid;
+    border-left-style: solid;
+    border-left-color: pink;
+    border-right-color: pink;
+    background-color: pink;
+    color: antiquewhite;
+    
+    font-size:20px;
+    padding: 10px; 
+}
+
+.topmiddlebottom h2 {
+    text-decoration: underline overline;
+}
+
+.topmiddlebottom h3 {
+    font-size: 20px;
+}
+
+
+table,
+th,
+td {
+    border: 1px solid pink;
+    border-width: 3px;
+    border-collapse: collapse;
+    background-color: #926239;
+    padding: 1em;
+}
+
+
+.footer {
+     order: 3; 
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: pink;
+    border-bottom-color: pink;
+    border-left-color: pink;
+    border-right-color: pink;
+    /*border-width: 2px;*/
+    font-variant: small-caps;
+    background-color: #926239;
+    /*padding: 1em;*/
+    border-width: 2px;
+    font-size: 18px;
+    padding: 1em;
+    color: antiquewhite;
+
+}
+
+.arr {
+    float: left;
+}
+
+.projectcodex {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+  }
+
+  .content {
+    padding: 0em;
+}
+
+@media(min-width:680px){
+
+    .history-image-left {
+        float: right; 
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .places {
+        display: flex;
+    }
+
+    .history-image {
+        float: right; 
+    }
+}
+
+@media(min-width:1000px){
+    
+    .history-image-left {
+    float: left; 
+    }
+
+    .history-image {
+        float: left; 
+    }
+}

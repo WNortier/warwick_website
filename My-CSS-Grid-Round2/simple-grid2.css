@@ -1,0 +1,131 @@
+.introdiv {
+  background-image: url("./space.gif");
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: pink;
+  border-bottom-color: pink;
+  border-left-color: pink;
+  border-right-color: pink;
+  text-align: center;
+  color: AntiqueWhite;
+  height: 17vh;
+}
+
+.introdiv {
+  font-weight: bold;
+}
+
+.header {
+  order: 1;
+  background-color: #926239;
+  color: AntiqueWhite;
+  border-bottom-style: solid;
+  border-bottom-color: pink;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-left-color: pink;
+  border-right-color: pink;
+  font-size: 15px;
+  /*border-width: 2px;*/
+}
+
+.header img {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: pink;
+  border-bottom-color: pink;
+  border-left-color: pink;
+  border-right-color: pink;
+}
+
+.header ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.menu li {
+  display: flex;
+  list-style: none;
+  margin: 0em;
+  padding: 0em;
+  font-size: 15px;
+}
+
+.menu a {
+  /* Ensure one can click anyware in the li for the link */
+  padding: 1em;
+  display: block;
+  width: 6em;
+}
+
+.menu a:hover {
+  /* Change the menu color to darker green when hovering over a link*/
+  background: grey;
+  color: AntiqueWhite;
+  padding: 1em;
+  width: 6em;
+}
+
+.menuone {
+  font-size: 20px;
+  text-decoration: none;
+  color: #F0FFFF;
+  border: pink 3px solid;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+.menutwo {
+  font-size: 20px;
+  text-decoration: none;
+  color: AntiqueWhite;
+  border: pink 3px solid;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+.menuthree {
+  font-size: 20px;
+  text-decoration: none;
+  color: AntiqueWhite;
+  border: pink 3px solid;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+@media(min-width:680px) {
+
+  .history-image-left {
+      float: right;
+  }
+
+  .menu {
+      display: flex;
+  }
+
+  .places {
+      display: flex;
+  }
+
+  .history-image {
+      float: right;
+  }
+}
+
+@media(min-width:1000px) {
+
+  .history-image-left {
+      float: left;
+  }
+
+  .history-image {
+      float: left;
+  }
+}
